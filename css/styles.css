@@ -1,0 +1,130 @@
+html, body, .wrap {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  /*text-align: center;*/
+}
+body {
+  font-family: 'Source Sans Pro','sans-serif',arial,sans-serif;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#brand {
+  font-size: 40px;
+  color:white;
+  /*border:4px solid white;*/
+  width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin:auto;
+  margin-top:35px;
+}
+#pic {
+  margin:auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 150px;
+  background: url('../img/me.jpg') no-repeat;
+  background-size: 150px 150px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 55px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    
+}
+#nav {
+  margin:0 auto;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 60px;
+  font-weight: 200;
+  display: inline-block;
+}
+
+#nav li {
+  padding-bottom: 5px;
+}
+
+
+.sidebar {
+  color:white;
+  position:fixed;
+  height:100%;
+  text-align: center;
+  background-image:url('../img/bg_2.jpg');
+  background-size:cover;
+  position: relative;
+}
+
+.content {
+  font-weight: 200;
+  background-color: white;
+  padding:15px;
+  height:100%;
+  text-align: left;
+  font-size:35px;
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+  padding-top:50px;
+  padding-left:30px;
+
+}
+
+.content p {
+  font-size: 30px;
+}
+
+.content h2 {
+  font-weight: 200;
+  font-size: 48px;
+  color:#658A67;
+}
+
+@media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
+  .content {
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .sidebar {
+    position: absolute;
+    top: 0;
+    height: 0px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  #brand {
+    display: none;
+  }
+  #pic {
+    display: none;
+  }
+  #nav {
+    margin-top: 0;
+    position: relative;
+    top: -30px;
+    color: black;
+    width: 90%;
+  }
+  #nav li {
+    background-color:#383b42;
+    font-size: 20px;
+    width: 100%;
+  }
+  .item {
+    overflow: visible;
+    height: auto;
+  }
+}
