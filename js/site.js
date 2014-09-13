@@ -49,6 +49,11 @@
         "sub": "Summer 2014"
       },
       {
+        "title": "TA for User Interface Design class @ MIT",
+        "url": "http://stellar.mit.edu/S/course/6/sp14/6.813/index.html",
+        "sub": "Spring 2014"
+      },
+      {
         "title": "Open Source Developer @ Reviewboard.org",
         "url": "https://reviewboard.org",
         "sub": "Spring 2014"
