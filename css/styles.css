@@ -52,6 +52,7 @@ body {
 }
 
 #nav a:hover {
+  text-decoration: none;
   color: #80af83;
 }
 
