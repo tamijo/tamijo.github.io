@@ -3,26 +3,13 @@ html, body, .wrap {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  /*text-align: center;*/
 }
 body {
   font-family: 'Source Sans Pro','sans-serif',arial,sans-serif;
 }
 
-.vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-a.bordered {
-  border-bottom: 1px dotted #333;
-}
-
 #brand {
-  font-size: 40px;
+  font-size: 2.5em;
   color:white;
   width: 200px;
   padding-top: 15px;
@@ -49,13 +36,10 @@ a.bordered {
 #nav {
   margin:0 auto;
   text-align: left;
-  font-size: 24px;
+  font-size: 1.5em;
   margin-top: 60px;
   font-weight: 200;
   display: inline-block;
-}
-.nav-header {
-  display: none;
 }
 
 #nav li {
@@ -63,14 +47,13 @@ a.bordered {
 }
 #nav a, #nav a:link, #nav a:visited {
   color:inherit;
-border-bottom: none;
+  border-bottom: none;
 
 }
 
 #nav a:hover {
   color: #80af83;
 }
-
 
 .sidebar {
   color:white;
@@ -88,22 +71,17 @@ border-bottom: none;
   padding:25px 15px 15px 30px;
   height:100%;
   text-align: left;
-  font-size:35px;
+  font-size:2.1em;
   box-shadow: 0 0 10px rgba(0,0,0,.6);
   min-height:100%;
   height:auto;
-
 }
 
-#intro p {
-  font-size: 33px;
-}
-
-a, a:link, a:visited{
+.content a, .content a:link, .content a:visited{
   border-bottom: 1px dotted #80af83;
   color: #80af83;
 }
-a:hover, a:hover {
+.content a:hover, .content a:hover {
   text-decoration: none;
   color:#658a67;
   border-bottom: 1px dotted #658a67;
@@ -111,7 +89,7 @@ a:hover, a:hover {
 
 .content #intro h2 {
   font-weight: 200;
-  font-size: 48px;
+  font-size: 2.5em;
   color:#80af83;
 }
 
@@ -125,15 +103,15 @@ a:hover, a:hover {
 
 .project .title {
   font-weight: 200;
-  font-size: 28px;
+  font-size: 1.75em;
   color:#80af83;
 }
 
 .project .subt {
-  font-size: 13px;
+  font-size: 0.8em;
 }
 
-a.xp {
+#experience a.xp, #experience a.xp:link, #experience a.xp:visited {
   display: block;
   background-color: #80af83;
   color:white;
@@ -141,26 +119,29 @@ a.xp {
   margin:15px auto;
   text-align: center;
   padding:10px;
-  font-size: 28px;
+  font-size: 1em;
+  border:none;
+
 }
 a.xp:hover{
   background-color: #658a67;
 }
+
 #resume-box {
   margin:15px auto;
   text-align: center;
   padding:10px;
-  font-size: 28px;
+  /*font-size: 1em;*/
   width:80%;
   border:2px dotted #80af83;
   color: #80af83;
 }
-#resume-box a, #resume-box a:link, #resume-box a:visited {
-  border: none;
+#resume-box a, #resume-box a:link {
+  border-bottom: none;
 }
 
 .xp .sub {
-  font-size: 18px;
+  font-size: 0.7em;
 }
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
@@ -192,18 +173,16 @@ a.xp:hover{
     color: #333;
     width: 90%;
   }
-  .nav-header {
-    display: block;
-    color: #333;
-  }
   #nav li {
     background-color:#80af83;
     font-size: 20px;
     width: 100%;
     display: none;
   }
-  .item {
-    overflow: visible;
-    height: auto;
+
+  .project {
+    display: block;
+    width:80%;
+    margin:0 auto;
   }
 }
