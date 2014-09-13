@@ -41,7 +41,7 @@
       {
         "title": "SuperUROP Researcher @ Haystack/CSAIL",
         "url": "http://www.eecs.mit.edu/academics-admissions/undergraduate-programs/eecs-super-urop",
-        "sub": "Current"
+        "sub": "2014 Fiscal year"
       },
       {
         "title": "Software Engineer Intern @ Facebook",
