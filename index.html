@@ -25,9 +25,10 @@
           <div id="brand">Tami<br>Forrester<br><br></div>
           <div>
             <ul id="nav" class="list-unstyled">
-              <li><i class="fa fa-fw fa-home"></i>&nbsp;Home</li>
-              <li><i class="fa fa-fw fa-file-code-o"></i>&nbsp;Projects</li>
-              <li><i class="fa fa-fw fa-paper-plane-o"></i>&nbsp;Contact </li>
+              <li><a href="#intro" class="scrollto"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a></li>
+              <li><a href="#projects" class="scrollto"><i class="fa fa-fw fa-file-code-o"></i>&nbsp;Projects</a></li>
+              <li><a href="#experience" class="scrollto"><i class="fa fa-fw fa-suitcase"></i>&nbsp;Experience</a></li>
+              <li><a href="#contact" class="scrollto"><i class="fa fa-fw fa-paper-plane-o"></i>&nbsp;Contact </a></li>
             </ul>
           </div>
         </div>
@@ -38,12 +39,23 @@
             </p>
           </div>
           <hr>
+          <br >
           <div id="projects"></div>
+          <br >
           <hr>
-          <div id="experience"></div>
+          <br >
+          <div id="experience">
+            <div id="experience-wrapper"></div>
+            <div id="resume-box">
+              <a target="_blank" href="https://www.dropbox.com/s/4exqy61xxvn1vgn/Resume.pdf">View Resume</a>
+            </div>
+          </div>
+          <br >
+
           <hr>
+          <br >
           <div id="contact">
-          <p>Want to contact me? Feel free to send me an <a href="mailto:contact@tamiforrester.com" target=_"blank">email</a>. I can also be found on <a href="http://twitter.com/tamiforrester" target="_blank">twitter</a>, <a href="http://www.linkedin.com/in/tamiforrester/" target="_blank">linkedin</a>, <a href="http://github.com/tamijo" target="_blank">github</a>, and <a href="http://plus.google.com/+TamiForrester/" target="_blank">google+</a>.</p>
+          <p>Want to contact me? Feel free to send an <a href="mailto:contact@tamiforrester.com" target=_"blank">email</a>. I can also be found on <a href="http://twitter.com/tamiforrester" target="_blank">twitter</a>, <a href="http://www.linkedin.com/in/tamiforrester/" target="_blank">linkedin</a>, <a href="http://github.com/tamijo" target="_blank">github</a>, and <a href="http://plus.google.com/+TamiForrester/" target="_blank">google+</a>.</p>
           </div>
       </div>
     </div>
@@ -58,41 +70,19 @@
         <img class="img-responsive img-thumbnail" src="{{img}}" />
       </a>
       <div class="title bold">{{title}}</div>
-      <div class="subt">{{subtitle}}</div>
-      <div class="info" hidden>{{{info}}} \\ <a class="source" href="{{source}}">Source</a> </div>
+      <div class="subt">{{subtitle}} | <a class="source" href="{{url}}">Source</a></div>
+      <div class="info">{{{info}}}</div>
     </div>
     {{/projects}}
     </script>
-
-    <script type="text/javascript">
-      var projects = {"projects":
-      [
-        {
-          "title" : "Call to Action",
-          "subtitle" : "JavaScript Prototype / January-June 2013",
-          "info" : "An interface made in HTML, CSS, and JavaScript for <a class='bold' href='http://calltoaction.mit.edu'>Call To Action</a>, an open-source web platform for creating telephone-based services being developed at <a class='bold' href='http://civic.mit.edu/'>MIT's Center for Civic Media</a>.",
-          "url" : "https://github.com/rodrigodavies/call2action/",
-          "img" : "img/calltoaction.jpg"
-          },
-        {
-          "title" : "StageIt",
-          "subtitle" : "Web Application / Spring 2013",
-          "info" : "A small application created with HTML, CSS, JavaScript using Parse for <a class='bold' href='http://courses.csail.mit.edu/6.831/'>6.813, the User Interface Design and Implementation</a> class at MIT. In a team of 3 students, we conducted user studies and created prototypes to design the interface. Our application was made to help choreographers place dancers on stage, and more easily create formations - placements of dancers at a particular time step.",
-          "url" : "https://github.com/6813-stageIt/stageIt",
-          "img" : "img/stageit.jpg"
-        },
-        {
-          "title" : "Hunters and Zombies",
-          "subtitle" : "Android Application / Spring 2013",
-          "info" : "A geolocation game made for Android phones in <a class='bold' href='http://web.mit.edu/21w.789/www/'>21W.789, the Communicating with Mobile Technology class</a>. In a team of 4 students, we conducted generative studies to come up with the concept of the game, and then designed the flow of the game using paper prototypes and user testing. The Android game was implemented using Google Maps API, GPS and WiFi location services, and Parse.",
-          "url" : "https://github.com/TeamGamey/HuntersAndZombiesDemo",
-          "img" : "img/huntersandzombies.png"
-        }
-      ]
-    };
-    var template = $('#projects-template').html();
-    var html = Mustache.render(template, projects);
-    $('#projects').html(html);
+    <script id="xp-template" type="x-tmpl-mustache">
+    {{#experiences}}
+    <a href="{{url}}" target="_blank" class="xp">
+      <div class="title">{{title}}</div>
+      <div class="sub">{{sub}}</div>
+    </a>
+    {{/experiences}}
     </script>
+    <script type="text/javascript" src="js/site.js"></script>
   </body>
 </html>

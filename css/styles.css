@@ -37,7 +37,7 @@ a.bordered {
   border-radius: 75px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 150px;
-  background: url('../img/me2.jpg') no-repeat;
+  background: url('../img/me4.jpg') no-repeat;
   background-size: 150px 150px;
   display: table;
   margin: 0 auto;
@@ -54,9 +54,21 @@ a.bordered {
   font-weight: 200;
   display: inline-block;
 }
+.nav-header {
+  display: none;
+}
 
 #nav li {
   padding-bottom: 5px;
+}
+#nav a, #nav a:link, #nav a:visited {
+  color:inherit;
+border-bottom: none;
+
+}
+
+#nav a:hover {
+  color: #80af83;
 }
 
 
@@ -87,12 +99,11 @@ a.bordered {
   font-size: 33px;
 }
 
-#intro a, #intro a:link, #intro a:visited,
-#contact a, #contact a:link, #contact a:visited {
+a, a:link, a:visited{
   border-bottom: 1px dotted #80af83;
   color: #80af83;
 }
-#intro a:hover, #contact a:hover {
+a:hover, a:hover {
   text-decoration: none;
   color:#658a67;
   border-bottom: 1px dotted #658a67;
@@ -121,8 +132,35 @@ a.bordered {
 .project .subt {
   font-size: 13px;
 }
-.project .info {
 
+a.xp {
+  display: block;
+  background-color: #80af83;
+  color:white;
+  width:80%;
+  margin:15px auto;
+  text-align: center;
+  padding:10px;
+  font-size: 28px;
+}
+a.xp:hover{
+  background-color: #658a67;
+}
+#resume-box {
+  margin:15px auto;
+  text-align: center;
+  padding:10px;
+  font-size: 28px;
+  width:80%;
+  border:2px dotted #80af83;
+  color: #80af83;
+}
+#resume-box a, #resume-box a:link, #resume-box a:visited {
+  border: none;
+}
+
+.xp .sub {
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
@@ -131,6 +169,7 @@ a.bordered {
     width: 100%;
     max-width: 100%;
     margin-top: 30px;
+    box-shadow: none;
   }
   .sidebar {
     position: absolute;
@@ -138,6 +177,7 @@ a.bordered {
     height: 0px;
     width: 100%;
     margin-bottom: 100px;
+    background-image: none;
   }
   #brand {
     display: none;
@@ -149,13 +189,18 @@ a.bordered {
     margin-top: 0;
     position: relative;
     top: -30px;
-    color: black;
+    color: #333;
     width: 90%;
   }
+  .nav-header {
+    display: block;
+    color: #333;
+  }
   #nav li {
-    background-color:#383b42;
+    background-color:#80af83;
     font-size: 20px;
     width: 100%;
+    display: none;
   }
   .item {
     overflow: visible;
