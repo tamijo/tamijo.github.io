@@ -3,6 +3,13 @@
     var projects = {"projects":
       [
         {
+          "title": "Review Board",
+          "subtitle": "Open Source Project / Spring 2014",
+          "info": "Extended <a href='https://reviewboard.org'>Review Board</a>, an open source code reviewing tool, to include the reviews that a user has made on their user profile page. This involved frontend and backend work using Python and the Django web framework. ",
+          "url": "https://reviews.reviewboard.org/r/5484/diff/#",
+          "img": "img/reviewboard.png"
+        },
+        {
           "title": "Pi Beta Phi",
           "subtitle" : "Website / June 2013-September 2014",
           "info": "The website, blog and communication portal for sisters of MIT's Pi Beta Phi. The blog is maintained in Wordpress, and the rest with HTML/JS with a PHP backend on a MySQL database. The portal is designed to store information for and about sisters.",

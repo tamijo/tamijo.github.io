@@ -109,8 +109,12 @@ body {
 
 .project .subt {
   font-size: 0.8em;
+  padding-bottom: 4px;
 }
-
+.project img {
+  height: 225px;
+  width: 392px;
+}
 #experience a.xp, #experience a.xp:link, #experience a.xp:visited {
   display: block;
   background-color: #80af83;
