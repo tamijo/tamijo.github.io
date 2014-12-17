@@ -1,0 +1,3 @@
+[submodule "projects/gameoflife"]
+	path = projects/gameoflife
+	url = https://github.com/tamijo/game-of-life

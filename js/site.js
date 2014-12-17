@@ -3,6 +3,13 @@
     var projects = {"projects":
       [
         {
+          "title": "Conway's Game of Life",
+          "subtitle": "JavaScript Game / Fall 2014",
+          "info": "An implementation of <a href='http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'>Conway's Game of Life</a> made in JavaScript in <a class='bold' href='https://stellar.mit.edu/S/course/6/fa14/6.170/'>6.170, Software Studio</a>. The game allows a user to start and stop an instance of the Game of Life, and select initial starting configurations, either from template boards or a drawn configuration.",
+          "url": "https://github.com/tamijo/game-of-life",
+          "img": "img/gameoflife.png"
+        },
+        {
           "title": "Review Board",
           "subtitle": "Open Source Project / Spring 2014",
           "info": "Extended <a href='https://reviewboard.org'>Review Board</a>, an open source code reviewing tool, to include the reviews that a user has made on their user profile page. This involved frontend and backend work using Python and the Django web framework. ",
