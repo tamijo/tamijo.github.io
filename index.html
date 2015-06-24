@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tami Forrester</title>
     <link rel="shortcut icon" href="favicon.ico" type='image/x-icon'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
 
@@ -21,80 +20,23 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid wrap animated fadeIn" >
-      <div class="row wrap">
-        <div class="sidebar pull-left col-md-3 col-xs-3">
-          <div id="pic" class=""></div>
-          <div id="brand" class="">Tami<br>Forrester<br><br></div>
-          <div>
-            <ul id="nav" class="list-unstyled ">
-              <li><a href="#intro" class="scrollto"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a></li>
-              <li><a href="#projects" class="scrollto"><i class="fa fa-fw fa-file-code-o"></i>&nbsp;Projects</a></li>
-              <li><a href="#experience" class="scrollto"><i class="fa fa-fw fa-suitcase"></i>&nbsp;Experience</a></li>
-              <li><a href="#contact" class="scrollto"><i class="fa fa-fw fa-paper-plane-o"></i>&nbsp;Contact </a></li>
-            </ul>
-          </div>
+    <div class="wrap">
+      <div class="card animate">
+          <img src="img/profile.jpg" />
+          <h3 class="name">Tami Forrester</h3>
         </div>
-        <div class="content pull-right col-md-9 col-xs-9">
-          <div id="intro">
-            <h2>Hi, there! I'm Tami.</h2>
-            <p>I'm a senior at MIT studying Computer Science and Engineering. My interests include user interfaces, web and graphic design, and photography. Most recently, I've worked as a Software Engineering Intern at <a href="http://facebook.com">Facebook</a>, and this year I'll be researching with <a href="http://haystack.csail.mit.edu">Haystack</a>. In my spare time, I take and edit <a href="https://www.flickr.com/photos/computerjunkie/">photos</a> for <a href="http://tech.mit.edu">The Tech</a>, listen to <a href="http://www.last.fm/user/computerjunky28">music</a>, read lots of books, and dance.
-            </p>
-          </div>
-          <hr>
-          <br >
-          <div id="projects"></div>
-          <br >
-          <hr>
-          <br >
-          <div id="experience">
-            <div id="experience-wrapper"></div>
-            <div id="resume-box">
-              <a target="_blank" href="https://www.dropbox.com/s/4exqy61xxvn1vgn/Resume.pdf">View Resume</a>
-            </div>
-          </div>
-          <br >
-          <hr>
-          <div id="contact">
-          <p>Want to contact me? Feel free to send an <a href="mailto:contact@tamiforrester.com" target=_"blank">email</a>. I can also be found on <a href="http://twitter.com/tamiforrester" target="_blank">twitter</a>, <a href="http://www.linkedin.com/in/tamiforrester/" target="_blank">linkedin</a>, <a href="http://github.com/tamijo" target="_blank">github</a>, and <a href="http://plus.google.com/+TamiForrester/" target="_blank">google+</a>.</p>
-          </div>
+
+        <div class="social animate">
+          <a href="mailto:contact@tamiforrester.com" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
+          <a href="https://facebook.com/tami" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="https://github.com/tamijo" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/tamiforrester" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          <a href="https://twitter.com/tamiforrester" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://www.flickr.com/photos/computerjunkie/" target="_blank"><i class="fa fa-flickr fa-2x"></i></a>
+        </div>
       </div>
     </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="js/mustache.js"></script>
-    <script id="projects-template" type="x-tmpl-mustache">
-    {{#projects}}
-    <div class="project">
-      <a href="{{img}}">
-        <img class="img-responsive img-thumbnail" src="{{img}}" />
-      </a>
-      <div class="title bold">{{title}}</div>
-      <div class="subt">{{subtitle}} | <a class="source" href="{{url}}">Source</a></div>
-      <div class="info">{{{info}}}</div>
-    </div>
-    {{/projects}}
-    </script>
-    <script id="xp-template" type="x-tmpl-mustache">
-    {{#experiences}}
-    <a href="{{url}}" target="_blank" class="xp">
-      <div class="title">{{title}}</div>
-      <div class="sub">{{sub}}</div>
-    </a>
-    {{/experiences}}
-    </script>
-    <script type="text/javascript" src="js/site.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-44196520-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>

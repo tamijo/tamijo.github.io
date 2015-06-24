@@ -4,188 +4,77 @@ html, body, .wrap {
   margin: 0px;
   padding: 0px;
 }
+
 body {
-  font-family: 'Source Sans Pro','sans-serif',arial,sans-serif;
-}
-
-#brand {
-  font-size: 2.5em;
-  color:white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin:auto;
-  margin-top:35px;
-}
-#pic {
-  margin:auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  -webkit-border-radius: 75px;
-  -moz-border-radius: 150px;
-  background: url('../img/me4.jpg') no-repeat;
-  background-size: 150px 150px;
-  display: table;
-  margin: 0 auto;
-  margin-top: 55px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-#nav {
-  margin:0 auto;
-  text-align: left;
-  font-size: 1.5em;
-  margin-top: 60px;
-  font-weight: 200;
-  display: inline-block;
-}
-
-#nav li {
-  padding-bottom: 5px;
-}
-#nav a, #nav a:link, #nav a:visited {
-  color:inherit;
-  border-bottom: none;
-
-}
-
-#nav a:hover {
-  text-decoration: none;
-  color: #80af83;
-}
-
-.sidebar {
-  color:white;
-  position:fixed;
-  height:100%;
-  text-align: center;
-  background-image:url('../img/bg_2.jpg');
-  background-size:cover;
-}
-
-.content {
-  font-weight: 200;
+  font-family:'Quattrocento Sas', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
   color: #333;
+}
+
+.wrap {
+  position: fixed;
+  background-color: #D1F0E3;
+}
+
+:before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.card {
+  width: 303px;
+  height: 347px;
+  margin: auto;
+  margin-top:100px;
+  cursor:pointer;
   background-color: white;
-  padding:25px 15px 15px 30px;
-  height:100%;
-  text-align: left;
-  font-size:2.1em;
-  box-shadow: 0 0 10px rgba(0,0,0,.6);
-  min-height:100%;
-  height:auto;
-}
-
-.content a, .content a:link, .content a:visited{
-  border-bottom: 1px dotted #80af83;
-  color: #80af83;
-}
-.content a:hover, .content a:hover {
-  text-decoration: none;
-  color:#658a67;
-  border-bottom: 1px dotted #658a67;
-}
-
-.content #intro h2 {
-  font-weight: 200;
-  font-size: 2.5em;
-  color:#80af83;
-}
-
-.project {
-  display: inline-block;
-  font-size: 20px;
-  width: 45%;
-  padding: 15px;
-  vertical-align: top;
-}
-
-.project .title {
-  font-weight: 200;
-  font-size: 1.75em;
-  color:#80af83;
-}
-
-.project .subt {
-  font-size: 0.8em;
-  padding-bottom: 4px;
-}
-.project img {
-  height: 225px;
-  width: 392px;
-}
-#experience a.xp, #experience a.xp:link, #experience a.xp:visited {
-  display: block;
-  background-color: #80af83;
-  color:white;
-  width:80%;
-  margin:15px auto;
+  border: 1px solid #eee;
+  padding: 19px;
   text-align: center;
-  padding:10px;
-  font-size: 1em;
-  border:none;
-
-}
-#experience a.xp:hover{
-  background-color: #658a67;
 }
 
-#resume-box {
-  margin:15px auto;
+.card h3.name {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #EBC2C2;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin-top: 12px;
+}
+
+.card img {
+  width: 263px;
+  margin: 0 auto;
+}
+
+.social {
+  margin: 0 auto;
+  margin-top: 20px;
+  width:303px;
   text-align: center;
-  padding:10px;
-  width:80%;
-  border:2px dotted #80af83;
-  color: #80af83;
-}
-#resume-box a, #resume-box a:link {
-  border-bottom: none;
+  color: #ffffff;
+  font-size: 18px;
 }
 
-.xp .sub {
-  font-size: 0.7em;
+.social a, .social a:active, .social a:visited{
+  color: #ffffff;
 }
 
-@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
-  .content {
-    clear: both;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 30px;
-    box-shadow: none;
-  }
-  .sidebar {
-    position: absolute;
-    top: 0;
-    height: 0px;
-    width: 100%;
-    margin-bottom: 100px;
-    background-image: none;
-  }
-  #brand {
-    display: none;
-  }
-  #pic {
-    display: none;
-  }
-  #nav {
-    margin-top: 0;
-    position: relative;
-    top: -30px;
-    color: #333;
-    width: 90%;
-  }
-  #nav li {
-    background-color:#80af83;
-    font-size: 20px;
-    width: 100%;
-    display: none;
-  }
+.social a{
+  padding-right: 7px;
+  transition: all .2s ease-in-out;
+}
 
-  .project {
-    display: block;
-    width:80%;
-    margin:0 auto;
-  }
+.social a:hover{
+  color: #EBC2C2;
+  transform: scale(1.1);
 }
