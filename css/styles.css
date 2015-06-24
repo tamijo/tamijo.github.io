@@ -1,5 +1,4 @@
-html, body, .wrap {
-  height: 100%;
+html, body{
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -10,12 +9,13 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-}
-
-.wrap {
-  position: fixed;
   background-color: #D1F0E3;
 }
+
+/*.wrap {
+  position: fixed;
+  background-color: #D1F0E3;
+}*/
 
 :before, :after {
   -webkit-box-sizing: border-box;
